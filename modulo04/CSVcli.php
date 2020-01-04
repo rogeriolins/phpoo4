@@ -2,7 +2,7 @@
 
     require_once 'classes/CSVParser.php';
 
-    $csv = new CSVParser('familiaX.csv', ';');
+    $csv = new CSVParser('familia.csv', ';');
     $csv->parse();
 
     echo "<pre>";
