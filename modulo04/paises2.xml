@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pais>
+    <nome> Brasil </nome>
+    <idioma> Português </idioma>
+    <capital> Brasilia </capital>
+    <moeda> Real (R$) </moeda>
+    <prefixo> +55 </prefixo>
+    <sigla> BR </sigla>
+    <populacao> 1.000.000.0000 </populacao>
+    <geografia>
+        <clima> Temperado </clima>
+        <costa> 7367 km </costa>
+        <pico> Neblina (3014 m) </pico>
+    </geografia>
+</pais>
