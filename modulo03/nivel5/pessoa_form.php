@@ -19,7 +19,7 @@
           $pessoa->id_cidade = "";
       } else if ($_REQUEST['action'] == 'edit') {
           $id = $_GET['id'];
-          $pessoa = Pessoa::find($id);
+          $pessoa = injecao1::find($id);
       } else {
           $pessoa->nome = $dados['nome'];
           $pessoa->endereco = $dados['endereco'];
@@ -27,7 +27,7 @@
           $pessoa->telefone = $dados['telefone'];
           $pessoa->email = $dados['email'];
           $pessoa->id_cidade = $dados['id_cidade'];
-          Pessoa::save($pessoa);
+          injecao1::save($pessoa);
           header("Location: pessoa_list.php");
       }
   }

@@ -33,7 +33,7 @@ class PessoaForm
         try
         {
             $id = (int) $param['id'];
-            $this->data = Pessoa::find($id);
+            $this->data = injecao1::find($id);
 
         } catch (Exception $e) {
             print $e->getMessage();
@@ -45,9 +45,9 @@ class PessoaForm
     {
         try
         {
-            Pessoa::save($param);
+            injecao1::save($param);
             $this->data = $param;
-            print "Pessoa salva com sucesso...";
+            print "injecao1 salva com sucesso...";
             header("Location: index.php");
 
         } catch (Exception $e) {

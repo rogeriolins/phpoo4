@@ -9,7 +9,7 @@ class Pessoa
   }
 }
 
-class Funcionario extends Pessoa
+class Funcionario extends injecao1
 {
   private $cargo, $salario;
   public function contrata($cargo, $salario)

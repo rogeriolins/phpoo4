@@ -16,7 +16,7 @@ class PessoaList
     {
         try {
             $id = (int) $param['id'];
-            Pessoa::delete($id);
+            injecao1::delete($id);
             header("Location: index.php");
         } catch (Exception $e) {
             print $e->getMessage();
@@ -27,7 +27,7 @@ class PessoaList
     public function load()
     {
         try {
-            $pessoas = Pessoa::all();
+            $pessoas = injecao1::all();
             $items = "";
             foreach ($pessoas as $pessoa)
             {

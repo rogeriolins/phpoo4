@@ -8,10 +8,10 @@
         /* DELETAR */
         if (!empty($_GET['action']) and $_GET['action'] == 'delete') {
             $id = (int) $_GET['id'];
-            Pessoa::delete($id);
+            injecao1::delete($id);
         }
 
-        $pessoas = Pessoa::all();
+        $pessoas = injecao1::all();
         $items = "";
         foreach ($pessoas as $pessoa)
         {

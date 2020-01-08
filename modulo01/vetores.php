@@ -18,16 +18,16 @@
 // // $Cores3[3] = "Preto";
 // // var_dump($Cores3);
 
-// // $Pessoa = [];
-// // $Pessoa["nome"] = "Maria";
-// // $Pessoa["end"] = "Rua Tal";
-// // $Pessoa["idade"] = 44;
-// // var_dump($Pessoa);
+// // $injecao1 = [];
+// // $injecao1["nome"] = "Maria";
+// // $injecao1["end"] = "Rua Tal";
+// // $injecao1["idade"] = 44;
+// // var_dump($injecao1);
 
 // // print "<br>";
-// // print "A Sra. {$Pessoa['nome']}, tem um filho com {$Pessoa['idade']} anos de idade e mora na rua {$Pessoa['end']}";
+// // print "A Sra. {$injecao1['nome']}, tem um filho com {$injecao1['idade']} anos de idade e mora na rua {$injecao1['end']}";
 // // print "<br>";
-// // foreach ($Pessoa as $Chave => $Valor) {
+// // foreach ($injecao1 as $Chave => $Valor) {
 // //   print "A pessoa de chave {$Chave} tem o valor {$Valor}.<br>";
 // // }
 
