@@ -22,11 +22,11 @@ class Pessoa
 
 define('VALOR', 5);
 print VALOR . "<br>";
-print Pessoa::GENEROS['F'];
+print injecao1::GENEROS['F'];
 
-$p1 = new Pessoa("Maria Odete", "F");
-$p2 = new Pessoa("Marcia Santos", "F");
-$p3 = new Pessoa("Diego da Silva", "M");
+$p1 = new injecao1("Maria Odete", "F");
+$p2 = new injecao1("Marcia Santos", "F");
+$p3 = new injecao1("Diego da Silva", "M");
 
 print "<pre>";
 var_dump($p1, $p2, $p3);

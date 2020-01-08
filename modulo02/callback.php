@@ -19,15 +19,15 @@ class Pessoa
   }
 }
 
-Pessoa::se_apresenta("Ricardo Lins");
+injecao1::se_apresenta("Ricardo Lins");
 print "<br>";
 
-$classe = "Pessoa";
+$classe = "injecao1";
 $metodo = "se_apresenta";
 $parametro = "Janaina Guimarães";
 call_user_func([$classe, $metodo], $parametro);
 
 print "<br>";
 
-$objeto = new Pessoa;
+$objeto = new injecao1;
 call_user_func([$objeto, $metodo], "Luana Godoi Lins");

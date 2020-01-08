@@ -28,7 +28,7 @@ class Pessoa
   }
 }
 
-$p1 = new Pessoa;
+$p1 = new injecao1;
 $p1->setNome("Rogerio Lins");
 $p1->setEndereco("Rua tal...");
 $p1->setNasc("06 de jan 1975");
