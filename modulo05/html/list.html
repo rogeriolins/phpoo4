@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Listagem de pessoas </title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link href="css/list.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <td></td>
+        <td></td>
+        <td>Codigo</td>
+        <td>Nome</td>
+        <td>Endereço</td>
+        <td>Bairro</td>
+        <td>Telefone</td>
+        <td>Cidade</td>
+    </tr>
+    </thead>
+    <tbody>
+
+        {items}
+
+    </tbody>
+</table>
+<button onclick="window.location='pessoa_form.php'">
+    <img src="images/add2.svg" style="width: 17px"> Inserir</img>
+</button>
+</body>
+
+</html>
