@@ -5,7 +5,6 @@ class Produto
 {
 
     private $dataBase;
-    private static $conn;
 
     public function __get($name)
     {
@@ -17,16 +16,12 @@ class Produto
         $this->dataBase[$name] = $value;
     }
 
-    public static function setConnection(PDO $conn)
-    {
-        self::$conn = $conn;
-    }
-
     public static function find($id, $class = __CLASS__ )
     {
         $sql = "select * from produto where id = '{$id}'";
         print "{$sql} <br>";
-        $result = self::$conn->query($sql);
+        $conn = Transaction::get();
+        $result = $conn->query($sql);
         return $result->fetchObject( $class );
     }
 
@@ -38,7 +33,8 @@ class Produto
             $sql = "{$sql} where {$filter}";
         }
         print "{$sql} <br>";
-        $result = self::$conn->query($sql);
+        $conn = Transaction::get();
+        $result = $conn->query($sql);
         return $result->fetchAll( PDO::FETCH_CLASS, $class);
     }
 
@@ -46,7 +42,8 @@ class Produto
     {
         $sql = "delete from produto where id = '{$this->id}'";
         print "{$sql} <br>";
-        return self::$conn->query($sql);
+        $conn = Transaction::get();
+        return $conn->query($sql);
     }
 
     public function save()
@@ -81,13 +78,15 @@ class Produto
                             id= '{$this->id}'";
         }
         print "{$sql} <br>";
-        return self::$conn->exec($sql);
+        $conn = Transaction::get();
+        return $conn->exec($sql);
     }
 
     public function getLastId()
     {
         $sql = "select max(id) as max from produto";
-        $result = self::$conn->query($sql);
+        $conn = Transaction::get();
+        $result = $conn->query($sql);
         return $result->fetchObject()->max;
     }
 

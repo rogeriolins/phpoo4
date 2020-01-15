@@ -1,0 +1,13 @@
+2020-01-15 22:01:10 : insert into 
+                        produto 
+                            (id, descricao, estoque, preco_custo, preco_venda, codigo_barras, data_cadastro, origem)
+                        values
+                            ( '8', 
+                              'Pernil Salamaleico',
+                              '70',
+                              '19',
+                              '38',
+                              '222333111',
+                              '2020-01-15',
+                              'N'
+                            )
