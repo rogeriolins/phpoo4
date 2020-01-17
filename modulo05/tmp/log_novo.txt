@@ -1,0 +1,17 @@
+2020-01-17 13:24:10 : select max(id) from produto
+2020-01-17 13:24:10 : insert into produto(descricao,estoque,preco_custo,preco_venda,codigo_barras,origem,id) values ('Cerveja artesanal IPA',50,8,12,'123321123','N',9)
+2020-01-17 13:30:28 : select max(id) from produto
+2020-01-17 13:30:28 : insert into produto(descricao,estoque,preco_custo,preco_venda,codigo_barras,origem,id) values ('Cerveja artesanal IPA',50,8,12,'123321123','N',10)
+2020-01-17 13:30:34 : select * from produto where id=7
+2020-01-17 13:36:05 : select * from produto where id=7
+2020-01-17 13:36:05 : select * from produto where id=8
+2020-01-17 13:36:11 : select * from produto where id=7
+2020-01-17 13:36:11 : select * from produto where id=9
+2020-01-17 13:42:49 : select * from produto where id=9
+2020-01-17 13:42:49 : select * from produto where id=9
+2020-01-17 13:42:49 : update produto set id = '9', descricao = 'Cerveja artesanal IPA', estoque = 46, preco_custo = '8.0', preco_venda = '12.0', codigo_barras = '123321123', origem = 'N' where id = 9
+2020-01-17 13:50:51 : select * from produto where id=9
+2020-01-17 13:50:51 : select * from produto where id=9
+2020-01-17 13:50:51 : update produto set id = '9', descricao = 'Cerveja artesanal IPA', estoque = 46, preco_custo = '8.0', preco_venda = '12.0', codigo_barras = '123321123', origem = 'N' where id = 9
+2020-01-17 14:48:54 : select * from produto where id=9
+2020-01-17 14:48:54 : delete from produto where id=9
