@@ -1,11 +1,11 @@
 <?php
 
-use Livro\Control\Page;
+use \Livro\Control\Page;
 use \Livro\Database\Transaction;
 use \Livro\Database\Repository;
 use \Livro\Database\Criteria;
 
-class PessoaControl extends Page
+class CidadeControl extends Page
 {
 
     public function Listar()
@@ -13,22 +13,23 @@ class PessoaControl extends Page
         try
         {
             Transaction::open('livro');
+
             $criteria = new Criteria();
             $criteria->setProperty('order', 'id');
 
-            $repository = new Repository('Pessoa');
-            $pessoas = $repository->load($criteria);
-            if($pessoas)
+            $repository = new Repository('Cidade');
+            $cidades = $repository->load($criteria);
+
+            if($cidades)
             {
-                foreach ($pessoas as $pessoa) {
-                    print "{$pessoa->id} - {$pessoa->nome}<br>";
+                foreach ($cidades as $cidade) {
+                    print "{$cidade->id} - {$cidade->nome}<br>";
                 }
             }
 
-
             Transaction::close();
         }
-        catch (Exception $e)
+        Catch (Exception $e)
         {
             Transaction::rollback();
             print $e->getMessage();
