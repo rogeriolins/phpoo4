@@ -11,6 +11,15 @@ $al->addDirectory('App/Control');
 $al->addDirectory('App/Model');
 $al->register();
 
+$loader = require 'vendor/autoload.php';
+$loader->register();
+
+print "<div style='margin: 5px; padding: 2px;'>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?'> Inicio </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=SimpleFormControl'> SimpleFormControl </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=TwigSampleControl'> TwigSimpleControl </a>";
+print "</div>";
+
 if( $_GET )
 {
     $class = $_GET['class'];
