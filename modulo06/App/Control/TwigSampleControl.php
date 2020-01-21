@@ -7,6 +7,8 @@ class TwigSampleControl extends Page
 
     public function __construct()
     {
+        parent::__construct();
+
         $loader   = new Twig_Loader_Filesystem('App/Resources');
         $twig     = new Twig_Environment($loader);
         $template = $twig->loadTemplate('form.html');

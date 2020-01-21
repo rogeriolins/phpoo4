@@ -18,6 +18,11 @@ print "<div style='margin: 5px; padding: 2px;'>";
 print "<a class='btn btn-info' style='margin: 0px 2px;' href='?'> Inicio </a>";
 print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=SimpleFormControl'> SimpleFormControl </a>";
 print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=TwigSampleControl'> TwigSimpleControl </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploElementControl'> Element </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploPanelControl'> Panel </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploBoxControl'> ExemploBoxControl </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploMessageControl'> ExemploMessageControl </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploQuestionControl'> ExemploQuestionControl </a>";
 print "</div>";
 
 if( $_GET )

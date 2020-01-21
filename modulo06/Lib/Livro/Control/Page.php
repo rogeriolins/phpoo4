@@ -2,8 +2,16 @@
 
 namespace Livro\Control;
 
-class Page
+use Livro\Widgets\Base\Element;
+
+class Page Extends Element
 {
+
+    public function __construct()
+    {
+        parent::__construct('div');
+    }
+
     public function show()
     {
         /* Valida os parametros enviados */
@@ -15,8 +23,7 @@ class Page
             {
                 call_user_func([$this, $method], $_REQUEST);
             }
-
-
         }
+        parent::show();
     }
 }

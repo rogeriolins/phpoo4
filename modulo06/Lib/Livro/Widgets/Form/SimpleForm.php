@@ -59,5 +59,4 @@ class SimpleForm
             print "</div>\n";
         print "</div>\n";
     }
-
 }

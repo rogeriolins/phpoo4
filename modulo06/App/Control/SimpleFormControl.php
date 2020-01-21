@@ -8,7 +8,7 @@ class SimpleFormControl extends Page
 
     public function __construct()
     {
-        /* parent::__construct(); */
+        parent::__construct();
         $form = new SimpleForm('my_form');
         $form->setTitle('Titulo do Formulario Personalizado com Bootstrap');
         $form->addField('Nome', 'name', 'text', 'Maria', 'form-control');
