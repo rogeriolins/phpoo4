@@ -20,9 +20,11 @@ print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=SimpleFormC
 print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=TwigSampleControl'> TwigSimpleControl </a>";
 print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploElementControl'> Element </a>";
 print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploPanelControl'> Panel </a>";
-print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploBoxControl'> ExemploBoxControl </a>";
-print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploMessageControl'> ExemploMessageControl </a>";
-print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploQuestionControl'> ExemploQuestionControl </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploBoxControl'> BoxControl </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploMessageControl'> MessageControl </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploQuestionControl'> QuestionControl </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploActionControl'> ActionControl </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploActionButtonControl'> ActionButtonControl </a>";
 print "</div>";
 
 if( $_GET )
