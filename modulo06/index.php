@@ -25,6 +25,8 @@ print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploMess
 print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploQuestionControl'> QuestionControl </a>";
 print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploActionControl'> ActionControl </a>";
 print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ExemploActionButtonControl'> ActionButtonControl </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=TWigWelcomeControl'> TWigWelcomeControl </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=TwigListControl'> TwigListControl </a>";
 print "</div>";
 
 if( $_GET )
