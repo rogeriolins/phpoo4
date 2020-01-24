@@ -21,6 +21,7 @@ print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ContatoForm
 print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=FuncionarioForm'> FuncionarioForm </a>";
 print "</div>";
 
+
 if( $_GET )
 {
     $class = $_GET['class'];
