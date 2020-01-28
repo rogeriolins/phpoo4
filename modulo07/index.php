@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste da aplicação</title>
+</head>
 <?php
 
 require_once 'Lib/Livro/Core/ClassLoader.php';
@@ -19,6 +25,8 @@ print "<a class='btn btn-info' style='margin: 0px 2px;' href='?'> Inicio </a>";
 print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ContatoForm'> ContatoForm </a>";
 print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ContatoForm&method=onLoad'> ContatoForm com onLoad </a>";
 print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=FuncionarioForm'> FuncionarioForm </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=ContatoList'> ContatoList </a>";
+print "<a class='btn btn-info' style='margin: 0px 2px;' href='?class=FuncionarioList'> FuncionarioList </a>";
 print "</div>";
 
 
@@ -33,4 +41,7 @@ if( $_GET )
     }
 }
 
-print "<link rel='stylesheet' href='App/Templates/css/bootstrap.min.css'>";
+?>
+<link rel='stylesheet' href='App/Templates/css/bootstrap.min.css'>
+</body>
+</html>
